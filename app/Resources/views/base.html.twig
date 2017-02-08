@@ -6,6 +6,11 @@
             {% block title %}Welcome Stranger!{% endblock %}
         </title>
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        {% block stylesheets %}
+            {% stylesheets 'vendor/twbs/bootstrap/dist/css/*' filter='cssrewrite' %}
+                <link rel="stylesheet" href="{{ asset_url }}" />
+            {% endstylesheets %}
+        {% endblock %}
     </head>
     <body>
         {% block body %}
