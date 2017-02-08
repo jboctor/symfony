@@ -4,8 +4,68 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "98d4b63a24d5e3d42cc942eb93934bae",
+    "content-hash": "ac5bc5688b572a2c45a8161ca54272db",
     "packages": [
+        {
+            "name": "bordercloud/tether",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BorderCloud/tether.git",
+                "reference": "71c1c347a14ac545a36376685453633aa14f4b40"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BorderCloud/tether/zipball/71c1c347a14ac545a36376685453633aa14f4b40",
+                "reference": "71c1c347a14ac545a36376685453633aa14f4b40",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Clone of hubspot/tether",
+            "homepage": "https://github.com/BorderCloud/tether.git",
+            "time": "2015-12-19T14:41:11+00:00"
+        },
+        {
+            "name": "components/jquery",
+            "version": "3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/components/jquery.git",
+                "reference": "09a1658378bc1f818856086396ebeab7d0ec2276"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/jquery/zipball/09a1658378bc1f818856086396ebeab7d0ec2276",
+                "reference": "09a1658378bc1f818856086396ebeab7d0ec2276",
+                "shasum": ""
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "jquery.js"
+                    ],
+                    "files": [
+                        "jquery.min.js",
+                        "jquery.min.map"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "John Resig",
+                    "email": "jeresig@gmail.com"
+                }
+            ],
+            "description": "jQuery JavaScript Library",
+            "homepage": "http://jquery.com",
+            "time": "2016-09-23T06:06:29+00:00"
+        },
         {
             "name": "doctrine/annotations",
             "version": "v1.2.7",

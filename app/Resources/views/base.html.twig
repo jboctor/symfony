@@ -3,11 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <title>
-            {% block title %}Welcome Stranger!{% endblock %}
+            {% block title %}Welcome Stranger Man!{% endblock %}
         </title>
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        {% block javascript %}
+            {% javascripts '@jquery' '@tether_js' '@bootstrap_js' %}
+                <script type="text/javascript" src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+        {% endblock %}
         {% block stylesheets %}
-            {% stylesheets 'vendor/twbs/bootstrap/dist/css/*' filter='cssrewrite' %}
+            {% stylesheets '@bootstrap_css' %}
                 <link rel="stylesheet" href="{{ asset_url }}" />
             {% endstylesheets %}
         {% endblock %}
