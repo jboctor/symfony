@@ -7,14 +7,9 @@
         </title>
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         {% block javascript %}
-            {% javascripts '@jquery' '@tether_js' '@bootstrap_js' %}
-                <script type="text/javascript" src="{{ asset_url }}"></script>
-            {% endjavascripts %}
         {% endblock %}
         {% block stylesheets %}
-            {% stylesheets '@bootstrap_css' %}
-                <link rel="stylesheet" href="{{ asset_url }}" />
-            {% endstylesheets %}
+            <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap/dist/css/bootstrap.min.css') }}"></link>
         {% endblock %}
     </head>
     <body>
